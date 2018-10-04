@@ -25,7 +25,8 @@ header {
 
 section {
   height: 30%;
-  width: 80%; }
+  width: 80%;
+  margin: auto; }
   section:before, section:after {
     content: "";
     display: table; }
@@ -34,7 +35,6 @@ section {
 
 section.main {
   height: 50vh;
-  margin: auto;
   background-image: url("../images/bkg1.jpg");
   background-size: cover;
   text-align: center; }
@@ -48,8 +48,7 @@ section.main {
     color: grey; }
 
 section.services {
-  background: white;
-  margin: auto; }
+  background: white; }
   section.services h1 {
     color: #f75311;
     font-weight: bold;
@@ -65,7 +64,12 @@ section.services {
   section.services #columntext {
     column-count: 2;
     padding: 0.5em 0;
-    text-align: justify; }
+    text-align: justify;
+    width: 80%;
+    margin: auto; }
+  section.services .maincontainer {
+    width: 80%;
+    margin: auto; }
   section.services .container {
     border: 1px solid cyan;
     width: 31%;
@@ -84,5 +88,53 @@ section.services {
     section.services .container p {
       text-align: center;
       padding: 1em; }
+
+section.contact {
+  margin-bottom: 1em; }
+  section.contact .sveobuhvatni {
+    width: 80%;
+    margin: auto;
+    height: 100%; }
+  section.contact h1 {
+    color: #f75311;
+    font-weight: bold;
+    border-bottom: 1px solid #f75311;
+    text-align: center;
+    width: 80%;
+    padding-top: 0.5em;
+    margin: auto; }
+  section.contact .pics {
+    float: right;
+    width: 50%; }
+  section.contact form {
+    float: left;
+    width: 50%;
+    margin-top: 20%;
+    display: inline-block; }
+    section.contact form #podaci {
+      width: 25%;
+      float: left;
+      margin: 0.5em auto 0; }
+    section.contact form #inputpodaci {
+      width: 70%;
+      border: 1px solid #f75311;
+      margin: 0.5em; }
+    section.contact form #button {
+      float: right;
+      border: none;
+      background-color: #f75311;
+      color: white;
+      padding: 5px 50px;
+      margin-right: 0.8em; }
+
+footer {
+  width: 100%;
+  background-color: steelblue;
+  height: 2em;
+  margin-top: 4em; }
+  footer p {
+    text-align: center;
+    color: white;
+    line-height: 2em; }
 
 /*# sourceMappingURL=CallCentar.css.map */

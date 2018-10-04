@@ -33,10 +33,10 @@ section {
     @include clearfix;
     height: 30%;
     width: 80%;
+    margin: auto;
 }
 section.main {
     height: 50vh;
-    margin : auto;
     background-image: url('../images/bkg1.jpg');
     background-size: cover; 
     text-align: center;
@@ -54,7 +54,7 @@ section.main {
 
 section.services{
     background: white;
-    margin:auto;
+    
     h1 {
         color: $main_text_color;
         font-weight: bold;
@@ -73,6 +73,12 @@ section.services{
         column-count: 2;
         padding: 0.5em 0;
         text-align: justify;
+        width: 80%;
+        margin:auto;
+    }
+    .maincontainer {
+        width: 80%;
+        margin : auto;
     }
     .container {
         border: 1px solid cyan;
@@ -100,3 +106,65 @@ section.services{
         }
     }
 }
+section.contact {
+    margin-bottom: 1em; 
+    
+    .sveobuhvatni {
+        width: 80%;
+        margin:auto;
+        height: 100%;
+        
+    }
+    h1 {
+        color: $main_text_color;
+        font-weight: bold;
+        border-bottom: 1px solid $main_text_color;
+        text-align: center;
+        width: 80%;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+    .pics {
+        float: right;
+        width:50%;
+    }
+    form {
+        float: left;
+        width: 50%;
+        margin-top:20%;
+        display: inline-block;
+        
+        #podaci {
+            width: 25%;
+            float :left;
+            margin : 0.5em auto 0;
+        
+        }
+        #inputpodaci {
+            width: 70%;
+            border : 1px solid $main_text_color;
+            margin : 0.5em ;
+        }  
+        #button {
+            float: right;
+            border : none;
+            background-color: $main_text_color;
+            color : white;
+            padding: 5px 50px;
+            margin-right: 0.8em;
+        }
+            
+    }
+}
+footer{
+    width: 100%;
+    background-color: steelblue ;
+    height: 2em;
+    margin-top: 4em;
+    p{
+        text-align:center;
+        color:white;
+        line-height: 2em;
+    }
+}
+
