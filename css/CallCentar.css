@@ -84,7 +84,8 @@ section.services {
         color: #f75311;
         text-transform: uppercase; }
       section.services .container .image img {
-        border-radius: 50%; }
+        border-radius: 50%;
+        width: 50%; }
     section.services .container p {
       text-align: center;
       padding: 1em; }
@@ -136,5 +137,37 @@ footer {
     text-align: center;
     color: white;
     line-height: 2em; }
+
+@media screen and (max-width: 768px) {
+  section, header, footer {
+    width: 100%; }
+
+  header > nav > ul > li > a {
+    padding: 0 0.5em; }
+
+  section.main h1 {
+    margin: 10% auto 0; }
+
+  #columntext {
+    column-count: none;
+    width: 100%;
+    margin: 15px auto; }
+
+  section.services .maincontainer {
+    width: 100%; }
+    section.services .maincontainer .container {
+      width: 80%;
+      margin: 15px auto 0;
+      float: none; }
+
+  section.contact {
+    width: 100%; }
+    section.contact .sveobuhvatni {
+      width: 80%; }
+    section.contact .pics img {
+      display: none; }
+    section.contact form {
+      width: 100%;
+      margin: 10% auto 0; } }
 
 /*# sourceMappingURL=CallCentar.css.map */

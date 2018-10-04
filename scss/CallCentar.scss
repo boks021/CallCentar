@@ -98,6 +98,7 @@ section.services{
             }
             img {
             border-radius: 50%;
+            width: 50%;
             }
         }
         p{
@@ -166,5 +167,53 @@ footer{
         color:white;
         line-height: 2em;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    section , header , footer {
+        width: 100%;
+        
+    }
+    header>nav>ul>li>a{
+        padding: 0 0.5em ;
+    }
+    section.main h1 {
+        margin: 10% auto 0;
+    }
+    #columntext {
+        column-count: none;
+		width: 100%;
+		margin: 15px auto;
+    }
+    section.services {
+
+       .maincontainer {
+        width:100%;
+       
+            .container {
+                width: 80%;
+                margin : 15px auto 0;
+                float: none;
+       }
+   }
+}
+section.contact {
+    width: 100%;
+
+    .sveobuhvatni {
+        width: 80%;
+    }
+    .pics {
+        img {
+        display: none;
+    }
+}
+    form {
+        width: 100%;
+        margin : 10% auto 0;
+       
+    }
+  }
 }
 
