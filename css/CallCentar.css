@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Exo', sans-serif;
+  color: #f75311; }
+
+header {
+  width: 100%;
+  height: 2em;
+  border-bottom: 1px solid grey; }
+  header nav > ul {
+    text-align: center;
+    margin-top: 1em; }
+  header li {
+    display: inline-block;
+    height: 2em; }
+    header li a {
+      text-decoration: none;
+      color: grey;
+      padding: 0 2em; }
+
+section:before, section:after {
+  content: "";
+  display: table; }
+section:after {
+  clear: both; }
+
+section.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/bkg1.jpg");
+  background-size: cover;
+  text-align: center; }
+  section.main h1 {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 1px solid #f75311;
+    width: 70%;
+    margin: 25% auto 0; }
+    section.main h1 h2 {
+      font-weight: bolder; }
+
+/*# sourceMappingURL=CallCentar.css.map */
