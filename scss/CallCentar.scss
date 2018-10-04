@@ -6,48 +6,97 @@
 body {
     font-family: 'Exo', sans-serif;
     color: $main_text_color;
+    width: 100%;
+    height: 100%;
     
 }
 header {
     width: 100%;
-    height: 2em;
+    height: 3em;
     border-bottom: 1px solid grey;
 
     nav>ul {
         text-align: center;
-        margin-top: 1em;
-        
     }
         li {
         display: inline-block;
-        height: 2em;
+        
         a{
             text-decoration: none;
             color: grey;
             padding: 0 2em;
-            
-            
+            line-height: 3em;
         }
     }
 }
 section {
     @include clearfix;
+    height: 30%;
+    width: 80%;
 }
 section.main {
-    width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    margin : auto;
     background-image: url('../images/bkg1.jpg');
     background-size: cover; 
     text-align: center;
     h1 {
-        font-size: 2em ;
+        font-size: 3em ;
         font-weight: bold;
-        border-bottom: 1px solid #f75311;
+        border-bottom: 1px solid $main_text_color;
         width: 70%;
-        margin: 25% auto 0;
-     
-    h2 {
-       font-weight: bolder;
+        margin: 20% auto 0;
     }
+    h2 {  
+       color : grey;
+    }   
+}
+
+section.services{
+    background: white;
+    margin:auto;
+    h1 {
+        color: $main_text_color;
+        font-weight: bold;
+        border-bottom: 1px solid $main_text_color;
+        text-align: center;
+        width: 100%;
+        padding-top: 0.5em;
+    }
+    #regulartext {
+        margin:auto;
+        width: 80%;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+    #columntext {
+        column-count: 2;
+        padding: 0.5em 0;
+        text-align: justify;
+    }
+    .container {
+        border: 1px solid cyan;
+        width: 31%;
+        float : left;
+        padding: 0.5em 0.5em;
+        margin: 0.5em 0.5em;
+        
+        .image {
+            margin:auto;
+            width:100%;  
+            text-align: center; 
+            h3 {
+            color: $main_text_color;
+            text-transform: uppercase;
+            
+            }
+            img {
+            border-radius: 50%;
+            }
+        }
+        p{
+            text-align: center;
+            padding: 1em;
+        }
     }
 }
